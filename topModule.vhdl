@@ -60,7 +60,8 @@ signal S2 : STD_LOGIC;
 begin
 
 G1 : Gates port map(A=> A, B=>B, G_out => S1);
-M1 : Multiplexor port map(Mux_in => S1, Sel => Selector, Mux_out => Mux_out);
+M1 : Multiplexor port map(Mux_in => S1, Sel => Selector, Mux_out => S2);
+Mux_out <= S2;
 DD1 : DisplayDecoder port map(DISP_in => S2, C_7SD => C_7SD, A_7SD => A_7SD);
 
 end Behavioral; 
