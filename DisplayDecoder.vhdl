@@ -41,9 +41,9 @@ begin
 process(DISP_in)
 begin
     if DISP_in = '1' then  
-        C_7SD <= "10001001"; 
+        C_7SD <= "10010001"; 
     else
-        C_7SD <= "11000111"; 
+        C_7SD <= "10001111"; 
     end if; 
 end process;  
 
